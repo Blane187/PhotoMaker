@@ -161,7 +161,7 @@ title = r"""
 """
 
 description = r"""
-<b>Official 🤗 Gradio demo</b> for <a href='https://github.com/TencentARC/PhotoMaker' target='_blank'><b>PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding</b></a>.<br>
+<b>colab Gradio demo</b> for <a href='https://github.com/TencentARC/PhotoMaker' target='_blank'><b>PhotoMaker: Customizing Realistic Human Photos via Stacked ID Embedding</b></a>.<br>
 <br>
 For stylization, you could use our other gradio demo [PhotoMaker-Style](https://huggingface.co/spaces/TencentARC/PhotoMaker-Style).
 <br>
@@ -211,7 +211,7 @@ tips = r"""
 css = '''
 .gradio-container {width: 85% !important}
 '''
-with gr.Blocks(css=css) as demo:
+with gr.Blocks(theme='Hev832/EasyAndCool', css=css) as demo:
     gr.Markdown(logo)
     gr.Markdown(title)
     gr.Markdown(description)
